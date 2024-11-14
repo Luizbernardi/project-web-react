@@ -7,10 +7,15 @@ const CountComponent = () => {
         setCount(count + 1);
 }
 
+const increment2 = () => {
+    setCount(count + 1);
+}
+
 return  (
     <div>
         <h2>Contador: {count}</h2>
         <button onClick={increment}>Incrementar</button>
+        <button onDrag={increment2}>Incrementar</button>
     </div>
     );
 }
