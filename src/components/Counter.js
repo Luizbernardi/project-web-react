@@ -13,7 +13,7 @@ const CountComponent = () => {
     const startIncrementing = () => {
         intervalRef.current = setInterval(() => {
             setCount((prevCount) => prevCount + 1);
-        }, 500000);
+        }, 5);
 
 };
 
@@ -27,7 +27,7 @@ const stopIncrementing = () => {
 const startDecremating = () => {
     intervalRef.current = setInterval(() => {
         setCount((prevCount) => prevCount - 1);
-    }, 500000);
+    }, 5);
 };
 
 const stopDecremating = () => {
